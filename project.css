@@ -1,0 +1,83 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+ overflow: hidden;
+}
+.shopFront{
+    background: url(house.png);
+    height: 550px;
+    background-repeat: no-repeat;
+    
+}
+img{
+    position: absolute;
+    top: 250px;
+    animation-name: car1;
+    animation-duration: 10s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count:infinite;
+    animation-direction:normal;
+    height: 50px;
+    animation-fill-mode: forwards;
+    
+
+    
+
+}
+@keyframes car1{
+    from{
+        transform: translateX(0);
+    } to{
+        transform: translateX(1200px);
+    }
+}
+
+.reVers{
+    position: absolute;
+    top: 250px;
+    animation-name: reVers;
+    animation-duration: 12s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count:infinite;
+    animation-direction: reverse;
+    height: 50px;
+    
+    
+
+}
+@keyframes reVers{
+    from{
+        transform: translateX(-100%);
+    } to{
+        transform: translateX(70%);
+    }
+}
+.up{
+   
+    position: absolute;
+    top: 250px;
+    animation-name: down;
+    animation-duration: 10s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count:infinite;
+    animation-direction:normal;
+    height: 60px;
+    
+   
+    
+    
+    
+
+
+}
+@keyframes down{
+    from{
+        transform: translateX(0);
+    } to{
+        transform: translateX(1200px);
+    }
+}
+
+
+
